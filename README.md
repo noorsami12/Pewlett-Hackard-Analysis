@@ -26,11 +26,11 @@ The results shown by the analysis provide a number of important insights.
 | 2      | Manager            |
 
 
-##Summary
+## Summary
 
 If the “silver tsunami” takes effect as predicted by the data, there will be 72,458 roles needing to be filled in Pewlett Hackard. However, a majority of retiring positions are under the title of “Senior” - 26,000 Senior Engineers and 25,000 Senior Staff for a total of 51,000 roles. Many of these roles can potentially be filled in-house by promotions of Engineers and Staff. As a result, new hires will primarily be for the roughly 20,000 non-Senior positions. With only 1,550 employees eligible for mentorship, this still leaves us with a 1:13 ratio for mentorship, which could be too hefty of a load for each mentor to handle. 
 
-###Additional Tables 
+### Additional Tables 
 For further insight into the “silver tsunami,” a table could be generated that further breaks down the mentorship eligibility by title. An eligible mentor with the title of “Staff” might not be the best choice to mentor a new hire in the position of “Engineer,” and breaking down the titles will give us a better picture of where our areas of need are in terms of mentorship. The queries for this table would be similar to the code used to generate the retirement titles table, only we would draw from the mentorship eligibility table instead. The following code could be refactored to draw from the mentorship eligibility table: 
 ```
 SELECT COUNT(unique_titles.title), unique_titles.title
